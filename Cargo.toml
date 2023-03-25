@@ -1,0 +1,26 @@
+[package]
+name = "chat-app"
+version = "0.2.0"
+edition = "2021"
+
+[workspace]
+members = ["client", "server"]
+
+[[bin]]
+name = "client"
+path = "client/src/main.rs"
+
+[[bin]]
+name = "server"
+path = "server/src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.3"
+tokio = { version = "1.26.0", features = ["full"] }
+futures = "0.3"
+chrono = "0.4"
+openssl = { version = "0.10.28", features = ["vendored"] }
+get_if_addrs = "0.5.3"
+serde_json = "1.0.94"

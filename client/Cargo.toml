@@ -7,7 +7,8 @@ edition = "2018"
 
 [dependencies]
 rand = "0.8.3"
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1.26.0", features = ["full"] }
 futures = "0.3"
 chrono = "0.4"
 openssl = { version = "0.10.28", features = ["vendored"] }
+serde_json = "1.0.94"

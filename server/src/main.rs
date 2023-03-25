@@ -3,34 +3,15 @@ use tokio::{
     net::TcpListener,
 };
 use std::io::stdin;
+use serde_json::Deserializer;
+use get_if_addrs;
 
 #[tokio::main]
 async fn main() {
-    
-    let mut ip_addr = String::new();
-    let mut port_1 = String::new();
-    let mut port_2 = String::new();
-    println!("Enter the IP address of the server:");
-    stdin().read_line(&mut ip_addr).unwrap();
-    println!("Enter the port of user 1:");
-    stdin().read_line(&mut port_1).unwrap();
-    println!("Enter the port of user 2:");
-    stdin().read_line(&mut port_2).unwrap();
-    if ip_addr.find("\r") != None {
-        ip_addr.pop();
-        ip_addr.pop();
-
-        port_1.pop();
-        port_1.pop();
-
-        port_2.pop();
-        port_2.pop();
-    } else {
-        ip_addr.pop();
-        port_1.pop();
-        port_2.pop();
+    for iface in get_if_addrs::get_if_addrs().unwrap() {
+        println!("{:#?}", iface);
     }
-
+    /* 
     let mut copy_addr = ip_addr.clone();
 
     ip_addr.push(':');
@@ -76,4 +57,5 @@ async fn main() {
             }
         });
     }
+    */
 }

@@ -62,5 +62,5 @@ async fn main() {
     let mut public_key_pem = String::new();
     reader_1.read_line(&mut public_key_pem).await.unwrap();
     println!("{}", public_key_pem);
-    let rsa = Rsa::public_key_from_pem(public_key_pem.as_bytes()).unwrap(); // Make this return a vector
+    let _rsa = Rsa::public_key_from_pem(public_key_pem.as_bytes()).unwrap(); // Make this return a vector
 }

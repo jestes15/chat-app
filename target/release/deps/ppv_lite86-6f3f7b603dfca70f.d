@@ -1,0 +1,11 @@
+/Users/jestes36/Documents/Projects/threading_things/chat-app/target/release/deps/ppv_lite86-6f3f7b603dfca70f.rmeta: /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/lib.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/soft.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/types.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/x86_64/mod.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/x86_64/sse2.rs
+
+/Users/jestes36/Documents/Projects/threading_things/chat-app/target/release/deps/libppv_lite86-6f3f7b603dfca70f.rlib: /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/lib.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/soft.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/types.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/x86_64/mod.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/x86_64/sse2.rs
+
+/Users/jestes36/Documents/Projects/threading_things/chat-app/target/release/deps/ppv_lite86-6f3f7b603dfca70f.d: /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/lib.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/soft.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/types.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/x86_64/mod.rs /Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/x86_64/sse2.rs
+
+/Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/lib.rs:
+/Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/soft.rs:
+/Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/types.rs:
+/Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/x86_64/mod.rs:
+/Users/jestes36/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.17/src/x86_64/sse2.rs:
