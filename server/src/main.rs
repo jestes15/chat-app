@@ -1,29 +1,29 @@
+#![allow(unused_imports)]
+
 use tokio::{
     io::{AsyncBufReadExt, AsyncWriteExt, BufReader},
     net::TcpListener,
 };
-use std::io::stdin;
-use serde_json::Deserializer;
+use serde::Deserialize;
 use get_if_addrs;
+use std::fs;
+use get_if_addrs::Interface;
+
+#[derive(Debug, Deserialize)]
+struct Data {
+    ip_address: String,
+    listening_ports: Vec<String>
+}
 
 #[tokio::main]
 async fn main() {
-    for iface in get_if_addrs::get_if_addrs().unwrap() {
-        println!("{:#?}", iface);
-    }
-    /* 
-    let mut copy_addr = ip_addr.clone();
-
-    ip_addr.push(':');
-    ip_addr.push_str(&port_1);
-
-    copy_addr.push(':');
-    copy_addr.push_str(&port_2);
+    let configuration_file = fs::read_to_string("./server/Resources/data.json").expect("Should have been able to read the file");
+    let json: Data = serde_json::from_str(&configuration_file).expect("JSON was not well-formatted");
     
+    let listener_1 = TcpListener::bind(concat_ip_and_port(&json.ip_address, &json.listening_ports[0])).await.unwrap();
+    let listener_2 = TcpListener::bind(concat_ip_and_port(&json.ip_address, &json.listening_ports[1])).await.unwrap();
 
-    let listener_1 = TcpListener::bind(ip_addr).await.unwrap();
-    let listener_2 = TcpListener::bind(copy_addr).await.unwrap();
-    
+
     loop {
         let (socket_1, _addr1) = listener_1.accept().await.unwrap();
         let (socket_1_read, mut socket_1_write) = socket_1.into_split();
@@ -57,5 +57,8 @@ async fn main() {
             }
         });
     }
-    */
+}
+
+fn concat_ip_and_port(ip_addr: &str, port: &str) -> String {
+    return String::from(ip_addr) + ":" + port;
 }
