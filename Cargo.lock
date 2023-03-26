@@ -70,6 +70,7 @@ dependencies = [
  "env_logger",
  "futures",
  "get_if_addrs",
+ "input-macro",
  "log",
  "openssl",
  "rand",
@@ -100,9 +101,11 @@ dependencies = [
  "chrono",
  "env_logger",
  "futures",
+ "input-macro",
  "log",
  "openssl",
  "rand",
+ "serde",
  "serde_json",
  "tokio",
 ]
@@ -388,6 +391,12 @@ dependencies = [
  "cxx",
  "cxx-build",
 ]
+
+[[package]]
+name = "input-macro"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5041633149d292995d99bfa401ee51b4c96923a588c67e8948f5fa1a6dae76c1"
 
 [[package]]
 name = "io-lifetimes"
@@ -761,6 +770,7 @@ dependencies = [
  "env_logger",
  "futures",
  "get_if_addrs",
+ "input-macro",
  "log",
  "openssl",
  "rand",

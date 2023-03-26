@@ -1,0 +1,34 @@
+{
+    "config_1": {
+        "test": {
+            "ip_address": "127.0.0.1",
+            "listening_port": "7180"
+        },
+        "production": {
+            "outside_network": {
+                "ip_address": "0.0.0.0",
+                "listening_port": "7180"
+            },
+            "inside_network": {
+                "ip_address": "192.168.0.0",
+                "listening_port": "7180"
+            }
+        }
+    },
+    "config_2": {
+        "test": {
+            "ip_address": "127.0.0.1",
+            "listening_port": "7181"
+        },
+        "production": {
+            "outside_network": {
+                "ip_address": "0.0.0.0",
+                "listening_port": "7181"
+            },
+            "inside_network": {
+                "ip_address": "192.168.0.0",
+                "listening_port": "7181"
+            }
+        }
+    }
+}
